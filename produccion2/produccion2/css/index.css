@@ -1,0 +1,395 @@
+
+
+  body {
+    background-color: rgb(251, 246, 243);
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19%;
+    height: auto;
+  }
+
+  h1 {
+    color: rgb(30, 57, 28); 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 25px; 
+    font-weight: lighter;
+    letter-spacing: 6px;
+    position: absolute; 
+    top: 13%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    white-space: nowrap;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    border: 1px solid black;
+    margin-top: 235px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%
+  }
+
+  li {
+    margin-right: 5vw;
+  }
+
+  a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fafdfa;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  .slideshow-container .mySlides {
+    height: 675px; 
+  }
+  
+  .slideshow-container .mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-grid .image-item {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-grid .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e391c99;
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  
+}
+
+.image-grid .image-item:hover .image-text {
+  opacity: 1;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+
+  background-color: #1E391C;
+  color: white;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.icon-container {
+  position: absolute;
+  top: 15%;
+  right: 20px; 
+  transform: translate(-50%);
+}
+
+
+.material-symbols-outlined {
+  color: #aa5656; 
+}
+
+.fa {
+  padding: 14px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: px;
+  border: none;
+  outline: none;
+  background-color: #b99b6b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  width: 60px; 
+  height: 60px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+  
+h2 {
+  color: #aa5656; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 35px; 
+  font-weight: bold;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px; 
+  justify-content: center; 
+  margin: auto;
+}
+
+.product-card {
+  margin-left: 54px; 
+}
+
+.product-card .product-image img {
+  width: 100%; 
+  height: auto; 
+}
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  
+  .product-card {
+    margin-left: 0; 
+  }
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image {
+  position: relative;
+}
+
+.image-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e391c99;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.product-image:hover .image-text-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sobre-nosotros-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #1e391c99;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+;
+}
+
+.sobre-nosotros-box:hover {
+  transform: scale(1.1); 
+}
+
+.sobre-nosotros-text {
+  font-size: 24px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255); 
+  font-family: 'Montserrat', sans-serif; 
+  letter-spacing: 6px;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.content-image {
+  flex: 0 0 30%; 
+}
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-text {
+  color: #000000ca; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 15px; 
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 0 0 70%; 
+  max-width: 600px;
+  margin: 0 auto; 
+  text-align: justify;
+}
+
+.friends-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color:#aa5656; 
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+;
+}
+
+.friends-box:hover {
+  transform: scale(1.1);
+}
+
+.friends-text {
+  font-size: 24px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255); 
+  font-family: 'Montserrat', sans-serif; 
+  letter-spacing: 6px;
+}
+
+
+
+
