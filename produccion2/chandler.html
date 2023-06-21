@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE COFFEE PLACE</title>
+  <link rel="stylesheet" href="ruta/al/archivo/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+    
+</head>
+
+
+
+<body>
+  <header>
+    <a href="index.html">
+    <img class="logo" src="imagenes/thecoffeeplacelogoo.png" alt="Logo">
+    <h1>THE COFFEE PLACE</h1>
+  </a>
+  </header>
+  
+
+  <nav>
+    <ul>      
+      <li><a href="./productos.html" target="_self">PRODUCTOS</a></li>
+      <li><a href="./sobrenosotros.html" target="_self">SOBRE NOSOTROS</a></li>
+      <li><a href="./carrito.html" target="_self">CARRITO</a></li>
+    </ul>
+  </nav>
+
+  <h2>CHANDLER BING</h2>
+<div class="media-container">
+  <div class="image-container">
+    <img src="imagenes/chandlerbing.webp" alt="CHANDLER">
+  </div>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qo4uy7ddd8A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+<br>
+  <div class="chandler-box">
+    <span class="chandler-text"> Interpretado por el actor Matthew Perry, Chandler es conocido por su sarcasmo y humor sarcástico.Chandler es un hombre inteligente y divertido que trabaja en el campo de la estadística y la informática. Aunque tiene un buen trabajo, lucha por encontrar sentido en su vida y lidiar con sus inseguridades.
+   Chandler es conocido por su habilidad para hacer chistes y usar el sarcasmo como mecanismo de defensa. Después de pasar por varias citas fallidas, Chandler finalmente encuentra el amor en Monica Geller, uno de los otros personajes principales de la serie. Su relación con Monica es una parte importante de su desarrollo como personaje y se convierte en una de las historias de amor más queridas de la serie. </span>
+  </div>
+  
+  <div class="icon-container">
+    <a href="https://www.example.com" target="_blank">
+    <i class="material-symbols-outlined">favorite</i>
+  </a>
+  <a href="https://www.example.com/search" target="_blank">
+    <i class="material-symbols-outlined">search</i>
+  </a>
+  </div>
+<br>
+<br>
+  <footer>
+    <form action="/action_page.php">
+      <div class="container">
+        <input type="text" placeholder="NOMBRE" name="name" required>
+        <input type="text" placeholder="CORREO ELECTRÓNICO" name="mail" required>
+      </div>
+  
+      <div class="container">
+        <input type="submit" value="INICIAR SESION">
+      </div>
+    </form>
+  
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+    <a href="https://www.pinterest.com/search/pins/?q=friends&rs=typed" class="fa fa-pinterest"></a>
+  <a href="https://www.youtube.com/watch?v=LTpmw0Ac6Zs" class="fa fa-youtube"></a>
+  
+  <script>
+    let mybutton = document.getElementById("myBtn");
+  
+    window.onscroll = function() {
+      scrollFunction();
+    };
+  
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+  
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  
+  </footer>
+  
+    </body>
+  </html>
